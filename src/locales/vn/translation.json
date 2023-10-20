@@ -860,15 +860,15 @@
       "successUpload": "{{name}} file uploaded successfully."
   },
   "nft": {
-      "yourBalance": "Your Balance",
+      "yourBalance": "Tiền trong tài khoản",
       "topUpBalance": "Top Up Balance",
-      "totalEarning": "Total Earning",
+      "totalEarning": "Tổng tiền thu được",
       "status": {
           "sold": "Sold",
           "added": "Added",
           "booked": "Booked"
       },
-      "activityStory": "Your Activity Story",
+      "activityStory": "Hoạt động gần đây của bạn",
       "by": "by",
       "recentActivity": "Recent Activity",
       "viewAll": "View all",
@@ -877,7 +877,7 @@
       "bid": "Bid",
       "trendingCollections": "Trending Collections",
       "recentlyAddedNFTs": "Recently Added NFTs",
-      "recentlyAddedMissions": "Recently Added Missions",
+      "recentlyAddedMissions": "Nhiệm vụ mới được thêm vào",
       "trendingCreators": "Trending Creators"
   }
 }

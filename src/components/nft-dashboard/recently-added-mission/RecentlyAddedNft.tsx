@@ -8,9 +8,9 @@ import { ViewAll } from '@app/components/nft-dashboard/common/ViewAll/ViewAll';
 import { NftCard } from '@app/components/nft-dashboard/recently-added/nft-card/NftCard';
 import { getRecentlyAddedNfts, NftItem } from '@app/api/nftDashboard.api';
 import { useResponsive } from '@app/hooks/useResponsive';
-import * as S from './RecentlyAddedNft.styles';
+import * as S from './RecentlyAddedMission.styles';
 
-export const RecentlyAddedNft: React.FC = () => {
+export const RecentlyAddedMission: React.FC = () => {
   const [nfts, setNfts] = useState<NftItem[]>([]);
 
   const { t } = useTranslation();

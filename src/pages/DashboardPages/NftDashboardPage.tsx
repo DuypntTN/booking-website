@@ -11,6 +11,7 @@ import { TotalEarning } from '@app/components/nft-dashboard/totalEarning/TotalEa
 import { ActivityStory } from '@app/components/nft-dashboard/activityStory/ActivityStory';
 import { RecentActivity } from '@app/components/nft-dashboard/recentActivity/RecentActivity';
 import * as S from './DashboardPage.styles';
+import { RecentlyAddedMission } from '@app/components/nft-dashboard/recently-added-mission/RecentlyAddedNft';
 
 const MedicalDashboardPage: React.FC = () => {
   const { isDesktop } = useResponsive();
@@ -19,23 +20,25 @@ const MedicalDashboardPage: React.FC = () => {
     <Row>
       <S.LeftSideCol xl={16} xxl={17} id="desktop-content">
         <Row gutter={[60, 60]}>
-          <Col span={24}>
+          {/* <Col span={24}>
             <TrendingCreators />
-          </Col>
-
+          </Col> */}
           <Col span={24}>
+            <RecentlyAddedMission />
+          </Col>
+          {/* <Col span={24}>
             <RecentlyAddedNft />
-          </Col>
+          </Col> */}
 
-          <Col span={24}>
+          {/* <Col span={24}>
             <TrendingCollections />
-          </Col>
+          </Col> */}
 
           <Col span={24}>
             <RecentActivity />
           </Col>
         </Row>
-        <References />
+        {/* <References /> */}
       </S.LeftSideCol>
 
       <S.RightSideCol xl={8} xxl={7}>
@@ -56,17 +59,20 @@ const MedicalDashboardPage: React.FC = () => {
 
   const mobileAndTabletLayout = (
     <Row gutter={[20, 24]}>
-      <Col span={24}>
+      {/* <Col span={24}>
         <TrendingCreators />
-      </Col>
+      </Col> */}
 
-      <Col span={24}>
+      {/* <Col span={24}>
         <RecentlyAddedNft />
-      </Col>
-
+      </Col> */}
+      {/* Nhiệm vụ vừa được thêm*/}
       <Col span={24}>
-        <TrendingCollections />
+        <RecentlyAddedMission />
       </Col>
+      {/* <Col span={24}>
+        <TrendingCollections />
+      </Col> */}
 
       <Col span={24}>
         <RecentActivity />
@@ -76,7 +82,7 @@ const MedicalDashboardPage: React.FC = () => {
 
   return (
     <>
-      <PageTitle>NFT Dashboard</PageTitle>
+      <PageTitle>Missions Dashboard</PageTitle>
       {isDesktop ? desktopLayout : mobileAndTabletLayout}
     </>
   );

@@ -64,7 +64,7 @@ const MedicalDashboardPage: React.FC = () => {
             <NewsCard />
           </Col>
         </Row>
-        <References />
+        {/* <References /> */}
       </S.LeftSideCol>
 
       <S.RightSideCol xl={8} xxl={7}>
